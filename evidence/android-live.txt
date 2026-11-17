@@ -1,0 +1,20 @@
+00:00 +0: loading C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/integration_test/cloud_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/D:/Development/Gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             29.1s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1,798ms
+00:00 +0: Class B authenticated Android acceptance
+ICA16 2026-11-17T23:58:41.285049Z T01 credentials rejected then accepted 
+ICA16 2026-11-17T23:58:49.038052Z T06 double-submit one exact server document …ePCnN
+ICA16 2026-11-17T23:58:51.193027Z T09 warning displayed and Cloud verified absent …42O6w
+ICA16 2026-11-17T23:59:03.938980Z T09 acknowledged denied then server-verified same ID …42O6w
+ICA16 2026-11-17T23:59:07.218329Z T08 offline then reconnected original round …3K2mo
+ICA16 2026-11-17T23:59:09.054931Z T11 three invalid writes denied; original unchanged …ePCnN
+ICA16 2026-11-17T23:59:11.165039Z T10 foreign read and create denied …ePCnN
+00:33 +1: (tearDownAll)
+00:34 +1: All tests passed!

@@ -104,6 +104,10 @@ void main() {
       find.textContaining('Write acknowledged; verification unavailable.'),
     );
     expect(find.text('Cloud verified'), findsNothing);
+    trace('T09 warning displayed and Cloud verified absent', second);
+    if (const bool.fromEnvironment('CAPTURE_LIVE')) {
+      await Future<void>.delayed(const Duration(seconds: 12));
+    }
     expect(await repo.verify(second, fixed(3)), true);
     await tap('Verify original round');
     await wait(find.text('Cloud verified'));
@@ -128,7 +132,11 @@ void main() {
     final deadline = DateTime.now().add(const Duration(seconds: 80));
     while (find.text('Cloud verified').evaluate().isEmpty &&
         DateTime.now().isBefore(deadline)) {
-      for (final label in ['Reconcile original round', 'Submit score']) {
+      for (final label in [
+        'Reconcile original round',
+        'Verify original round',
+        'Submit score',
+      ]) {
         final f = find.widgetWithText(FilledButton, label);
         if (f.evaluate().isNotEmpty &&
             t.widget<FilledButton>(f).onPressed != null) {
