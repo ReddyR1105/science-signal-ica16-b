@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as ui;
 
+import 'package:flutter/services.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -52,6 +54,16 @@ void main() {
   late MemoryAttempts repo;
   final capture = GlobalKey();
   Future<void> start(WidgetTester t) async {
+    const font = String.fromEnvironment('CAPTURE_FONT');
+    if (font.isNotEmpty) {
+      await t.runAsync(() async {
+        final loader = FontLoader('Evidence')
+          ..addFont(
+            Future.value(ByteData.sublistView(await File(font).readAsBytes())),
+          );
+        await loader.load();
+      });
+    }
     repo = MemoryAttempts();
     t.view.physicalSize = const Size(900, 1500);
     t.view.devicePixelRatio = 1;
@@ -61,6 +73,10 @@ void main() {
       RepaintBoundary(
         key: capture,
         child: MaterialApp(
+          theme: ThemeData(
+            fontFamily: font.isEmpty ? null : 'Evidence',
+            colorSchemeSeed: const Color(0xff146e69),
+          ),
           home: Quiz(
             attempts: repo,
             fetch: () async => parseQuestions(data),
@@ -191,4 +207,3 @@ void main() {
     expect(jsonDecode(data)['results'], hasLength(5));
   });
 }
-

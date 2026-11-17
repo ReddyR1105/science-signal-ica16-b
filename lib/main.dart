@@ -4,25 +4,15 @@ import 'package:flutter/material.dart';
 
 import 'attempts.dart';
 import 'quiz.dart';
+import 'firebase_options.dart';
 import 'trivia.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Widget home;
   try {
-    const project = String.fromEnvironment('FIREBASE_PROJECT_ID');
-    if (project.isEmpty) {
-      throw StateError(
-        'Supply the registered Firebase Android configuration at build time.',
-      );
-    }
     await Firebase.initializeApp(
-      options: const FirebaseOptions(
-        apiKey: String.fromEnvironment('FIREBASE_API_KEY'),
-        appId: String.fromEnvironment('FIREBASE_APP_ID'),
-        messagingSenderId: String.fromEnvironment('FIREBASE_SENDER_ID'),
-        projectId: project,
-      ),
+      options: DefaultFirebaseOptions.currentPlatform,
     );
     home = const AuthGate();
   } catch (e) {
