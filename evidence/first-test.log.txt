@@ -1,0 +1,23 @@
+00:00 +0: loading C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/widget_test.dart
+00:00 +0: T02 decoded live response contains five validated questions
+00:00 +1: T03 reject malformed encoding, status codes and short sets
+00:00 +1 -1: T03 reject malformed encoding, status codes and short sets [E]
+  Expected: throws <Instance of 'FormatException'>
+    Actual: <Closure: () => List<Question>>
+     Which: returned [
+                       Instance of 'Question',
+                       Instance of 'Question',
+                       Instance of 'Question',
+                       Instance of 'Question',
+                       Instance of 'Question'
+                     ]
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\widget_test.dart 18:47                         main.<fn>
+  
+00:00 +1 -1: T04 T05 answer locking, review score and fresh round
+00:00 +2 -1: Some tests failed.
+
+Failing tests:
+  C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/widget_test.dart: T03 reject malformed encoding, status codes and short sets
