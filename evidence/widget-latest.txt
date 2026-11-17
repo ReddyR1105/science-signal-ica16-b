@@ -1,0 +1,10 @@
+00:00 +0: loading C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart
+00:00 +0: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: T04 T05 feedback, double taps, all five entries and replay
+00:01 +1: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: T04 T05 feedback, double taps, all five entries and replay
+00:01 +2: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: T04 T05 feedback, double taps, all five entries and replay
+00:01 +3: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: T04 T05 feedback, double taps, all five entries and replay
+00:03 +4: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: T09 component only: acknowledged then denied and read-only retry
+00:04 +5: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: T12 unavailable and quota messages with manual reconciliation
+00:07 +6: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: Slow acknowledgement keeps one active transaction
+00:08 +7: C:/Users/gosan/Documents/Codex/2026-11-17/files-pasted-by-the-user-codex/work/science_signal/test/quiz_ui_test.dart: fixture is genuine JSON
+00:08 +8: All tests passed!

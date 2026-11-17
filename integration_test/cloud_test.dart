@@ -66,7 +66,7 @@ void main() {
     }
 
     Future<void> tap(String text) async {
-      final f = find.text(text).first;
+      final f = find.text(text);
       await wait(f);
       await t.ensureVisible(f);
       await t.tap(f);

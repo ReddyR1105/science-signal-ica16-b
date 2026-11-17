@@ -1,0 +1,4 @@
+2026-11-17T23:51:57.082587+00:00 T01 invalid sign-in produced visible error
+2026-11-17T23:52:24.592791+00:00 T01 valid sign-in, synthetic user suffix gkMy1
+2026-11-17T23:54:00.113076+00:00 T06 release double-tap, Cloud verified; Round review � 3/5; round �hPnId
+2026-11-17T23:54:14.292182+00:00 T07 process restart, same authenticated owner, same server-read round �hPnId

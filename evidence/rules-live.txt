@@ -1,0 +1,5 @@
+2026-11-17T23:51:23.531436+00:00 T01 Auth REST valid and invalid checked. Owner �gxId2
+2026-11-17T23:51:24.602888+00:00 T01 Auth REST valid and invalid checked. Owner �8pgF2
+2026-11-17T23:51:25.601271+00:00 Owner control create and server read HTTP 200. Timestamp 2026-11-17T23:51:25.401Z; round �e6a26
+2026-11-17T23:51:26.351903+00:00 T10 PASS deployed rules rejected foreign read and create. HTTP 403 PERMISSION_DENIED. Round �e6a26
+2026-11-17T23:51:27.194442+00:00 T11 PASS deployed rules rejected score 6, extra field and update. HTTP 403 PERMISSION_DENIED. Owner record unchanged. Round �e6a26
